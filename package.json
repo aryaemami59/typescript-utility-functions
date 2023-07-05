@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is a typescript utility functions package made by Arya Emami",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
   "author": "Arya Emami <aryaemami59@yahoo.com> (https://github.com/aryaemami59)",
   "private": false,
   "repository": {
@@ -10,8 +12,6 @@
     "url": "https://github.com/aryaemami59/typescript-utility-functions"
   },
   "type": "module",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
   "keywords": [],
   "license": "ISC",
   "files": [

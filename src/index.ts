@@ -20,3 +20,7 @@ export const capitalize = <const S extends string>(str: S): Capitalize<S> =>
    * @type {Capitalize<S>}
    */
   (str.charAt(0).toUpperCase() + str.slice(1)) as Capitalize<S>;
+
+export const lowerCase = <const S extends string>(str: S): Lowercase<S> => {
+  return str.toLowerCase() as Lowercase<S>;
+};
