@@ -18,6 +18,7 @@
     "dist"
   ],
   "scripts": {
+    "preinstall": "npm run build",
     "start": "ts-node src/index.ts",
     "lint": "eslint . --ext ts",
     "format": "eslint . --fix --ext ts",
