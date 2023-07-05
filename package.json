@@ -15,14 +15,15 @@
   "keywords": [],
   "license": "ISC",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
-    "preinstall": "npm run build",
     "start": "ts-node src/index.ts",
     "lint": "eslint . --ext ts",
     "format": "eslint . --fix --ext ts",
-    "build": "rm -rf dist && tsc"
+    "build": "rm -rf dist && tsc",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@types/node": "^20.3.3",
