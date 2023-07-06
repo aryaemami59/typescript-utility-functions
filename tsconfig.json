@@ -6,6 +6,7 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
+    "extendedDiagnostics": true,
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -23,6 +24,7 @@
     "strictNullChecks": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
+    "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true
   },
   "ts-node": {

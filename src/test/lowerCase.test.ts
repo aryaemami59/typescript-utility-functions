@@ -1,5 +1,11 @@
 import lowerCase from "../lowerCase";
 
-test("lowercase string", () => {
-  expect(lowerCase("ARYA")).toBe("arya");
+describe("lowercase string", () => {
+  it("pass", () => {
+    expect(lowerCase("ARYA")).toBe("arya");
+  });
+
+  it("fail", () => {
+    expect(lowerCase("ARYA")).not.toBe("Arya");
+  });
 });

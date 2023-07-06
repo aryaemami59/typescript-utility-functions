@@ -4,6 +4,7 @@
   "description": "This is a typescript utility functions package made by Arya Emami",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "module": "dist/index.js",
   "author": "Arya Emami <aryaemami59@yahoo.com> (https://github.com/aryaemami59)",
   "private": false,
@@ -21,7 +22,8 @@
     "format": "eslint . --fix --ext ts",
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "prepublish": "npm run build",
-    "test": "jest"
+    "test": "jest",
+    "start": "ts-node index.ts"
   },
   "devDependencies": {
     "@types/jest": "^29.5.2",
