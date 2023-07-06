@@ -15,8 +15,7 @@
   "keywords": [],
   "license": "ISC",
   "files": [
-    "dist",
-    "index.ts"
+    "dist"
   ],
   "scripts": {
     "start": "ts-node src/index.ts",
