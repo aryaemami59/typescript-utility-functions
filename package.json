@@ -16,7 +16,8 @@
   "license": "ISC",
   "files": [
     "dist",
-    "src"
+    "src",
+    "index.ts"
   ],
   "scripts": {
     "start": "ts-node src/index.ts",
