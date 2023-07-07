@@ -7,7 +7,6 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "extendedDiagnostics": true,
-    "lib": ["ESNext"],
     "module": "ESNext",
     "moduleResolution": "Node",
     "noErrorTruncation": true,

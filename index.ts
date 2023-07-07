@@ -1,5 +1,7 @@
 // Utilities
+import fetchWrapper from "./dist/src/fetchWrapper";
 import jsonStringify from "./src/jsonStringify";
+import nodeFetchWrapper from "./src/nodeFetchWrapper";
 
 // Arrays
 import arrayDifference from "./src/arrayDifference";
@@ -20,8 +22,10 @@ export {
   arrayIntersection,
   arraySymmetricDifference,
   capitalize,
+  fetchWrapper,
   jsonStringify,
   lowerCase,
+  nodeFetchWrapper,
   objectEntries,
   objectKeys,
   upperCase,

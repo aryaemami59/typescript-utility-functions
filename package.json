@@ -45,6 +45,7 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@aryaemami59/ts-util-types": "github:aryaemami59/typescript-utility-types"
+    "@aryaemami59/ts-util-types": "github:aryaemami59/typescript-utility-types",
+    "node-fetch": "^3.3.1"
   }
 }
