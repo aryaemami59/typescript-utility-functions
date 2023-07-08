@@ -22,7 +22,7 @@
     "format": "eslint . --fix --ext ts",
     "build": "rm -rf dist && tsc -p tsconfig.build.json",
     "prepublish": "npm run build",
-    "test": "jest",
+    "test": "jest --silent",
     "start": "ts-node index.ts"
   },
   "devDependencies": {

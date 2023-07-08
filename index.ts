@@ -1,5 +1,5 @@
 // Utilities
-import fetchWrapper from "./dist/src/fetchWrapper";
+import fetchWrapper from "./src/fetchWrapper";
 import jsonStringify from "./src/jsonStringify";
 import nodeFetchWrapper from "./src/nodeFetchWrapper";
 

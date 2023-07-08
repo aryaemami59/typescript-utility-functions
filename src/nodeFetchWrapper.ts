@@ -33,4 +33,6 @@ const nodeFetchWrapper = async <T extends ObjectOrArray>(
   }
 };
 
+nodeFetchWrapper("https://aryaemami59.github.io/simplysuppliesAPI/items.json");
+
 export default nodeFetchWrapper;
