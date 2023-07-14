@@ -2,10 +2,12 @@ import jsonStringify from "../jsonStringify";
 
 describe("json stringify", () => {
   it("pass", () => {
+    expect.hasAssertions();
     expect(jsonStringify({ a: 2 })).toBe(`{"a":2}`);
   });
 
-  it("pass", () => {
+  it("pass second", () => {
+    expect.hasAssertions();
     expect(jsonStringify({ a: "a" })).toBe(`{"a":"a"}`);
   });
 });

@@ -5,7 +5,7 @@ import type { AnyObject } from "@aryaemami59/ts-util-types";
  * @param obj Object whose keys are returned as an array.
  * @see {@link Object.keys}
  */
-const objectKeys = <const T extends AnyObject>(obj: T): (keyof T)[] =>
-  Object.keys(obj) as (keyof T)[];
+const objectKeys = <const TObj extends AnyObject>(obj: TObj): (keyof TObj)[] =>
+  Object.keys(obj) as (keyof TObj)[];
 
 export default objectKeys;

@@ -5,10 +5,12 @@ describe("array intersection", () => {
   const secondArray = [2, 3, 4];
 
   it("pass", () => {
-    expect(arrayIntersection(firstArray, secondArray)).toEqual([2, 3]);
+    expect.hasAssertions();
+    expect(arrayIntersection(firstArray, secondArray)).toStrictEqual([2, 3]);
   });
 
   it("fail", () => {
-    expect(arrayIntersection(firstArray, secondArray)).not.toEqual([1]);
+    expect.hasAssertions();
+    expect(arrayIntersection(firstArray, secondArray)).not.toStrictEqual([1]);
   });
 });

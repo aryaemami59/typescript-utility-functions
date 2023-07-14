@@ -11,6 +11,7 @@ import arraySymmetricDifference from "./src/arraySymmetricDifference";
 // Objects
 import objectEntries from "./src/objectEntries";
 import objectKeys from "./src/objectKeys";
+import pick from "./src/pick";
 
 // Strings
 import capitalize from "./src/capitalize";
@@ -28,5 +29,6 @@ export {
   nodeFetchWrapper,
   objectEntries,
   objectKeys,
+  pick,
   upperCase,
 };

@@ -5,10 +5,12 @@ describe("array difference", () => {
   const secondArray = [2, 3, 4];
 
   it("pass", () => {
-    expect(arrayDifference(firstArray, secondArray)).toEqual([1]);
+    expect.hasAssertions();
+    expect(arrayDifference(firstArray, secondArray)).toStrictEqual([1]);
   });
 
   it("fail", () => {
-    expect(arrayDifference(firstArray, secondArray)).not.toEqual([2, 3]);
+    expect.hasAssertions();
+    expect(arrayDifference(firstArray, secondArray)).not.toStrictEqual([2, 3]);
   });
 });

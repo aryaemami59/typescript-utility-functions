@@ -5,12 +5,16 @@ describe("array difference", () => {
   const secondArray = [2, 3, 4];
 
   it("pass", () => {
-    expect(arraySymmetricDifference(firstArray, secondArray)).toEqual([1, 4]);
+    expect.hasAssertions();
+    expect(arraySymmetricDifference(firstArray, secondArray)).toStrictEqual([
+      1, 4,
+    ]);
   });
 
   it("fail", () => {
-    expect(arraySymmetricDifference(firstArray, secondArray)).not.toEqual([
-      2, 3,
-    ]);
+    expect.hasAssertions();
+    expect(arraySymmetricDifference(firstArray, secondArray)).not.toStrictEqual(
+      [2, 3]
+    );
   });
 });

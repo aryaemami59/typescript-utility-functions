@@ -8,7 +8,7 @@ import type { ObjectOrArray } from "@aryaemami59/ts-util-types";
  */
 const jsonStringify = <
   const TValue extends ObjectOrArray,
-  S extends string = string
+  S extends string = string,
 >(
   value: TValue,
   replacer?: (number | string)[] | null,
