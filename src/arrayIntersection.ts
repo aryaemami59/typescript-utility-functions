@@ -3,7 +3,7 @@
  * @param firstArray
  * @param secondArray
  */
-const arrayIntersection = <T>(firstArray: T[], secondArray: T[]): T[] =>
+const arrayIntersection = <const T>(firstArray: T[], secondArray: T[]): T[] =>
   firstArray.filter(item => secondArray.includes(item));
 
 export default arrayIntersection;

@@ -5,7 +5,10 @@ import arrayDifference from "./arrayDifference";
  * @param firstArray
  * @param secondArray
  */
-const arraySymmetricDifference = <T>(firstArray: T[], secondArray: T[]): T[] =>
+const arraySymmetricDifference = <const T>(
+  firstArray: T[],
+  secondArray: T[]
+): T[] =>
   arrayDifference(firstArray, secondArray).concat(
     arrayDifference(secondArray, firstArray)
   );

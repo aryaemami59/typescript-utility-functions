@@ -3,7 +3,7 @@
  * @param firstArray
  * @param secondArray
  */
-const arrayDifference = <T>(firstArray: T[], secondArray: T[]): T[] =>
+const arrayDifference = <const T>(firstArray: T[], secondArray: T[]): T[] =>
   firstArray.filter(item => !secondArray.includes(item));
 
 export default arrayDifference;
