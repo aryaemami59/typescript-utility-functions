@@ -1,4 +1,5 @@
 import type { AnyObject, ObjectEntries } from "@aryaemami59/ts-util-types";
+
 /**
  * A typescript helper function that improves upon the native `Object.entries` method.
  * @param obj Must be a valid object.
