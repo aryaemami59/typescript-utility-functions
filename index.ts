@@ -9,6 +9,7 @@ import nodeFetchWrapper from "./src/node/nodeFetchWrapper";
 import objectEntries from "./src/node/objectEntries";
 import objectKeys from "./src/node/objectKeys";
 import pick from "./src/node/pick";
+import split from "./src/node/split";
 
 // Strings
 import capitalize from "./src/node/capitalize";
@@ -26,6 +27,7 @@ export {
   objectEntries,
   objectKeys,
   pick,
+  split,
   toLowerCase,
   toUpperCase,
 };

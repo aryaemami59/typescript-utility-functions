@@ -24,13 +24,14 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "project": ["./tsconfig.json"],
+    // "project": ["./tsconfig.json"],
     // "project": true,
-    // "project": [
-    //   "./tsconfig.json",
-    //   "./src/browser/tsconfig.browser.json",
-    //   "./src/node/tsconfig.node.json"
-    // ],
+    "project": [
+      // "./tsconfig.base.json",
+      "./tsconfig.json"
+      // "./src/browser/tsconfig.browser.json",
+      // "./src/node/tsconfig.node.json"
+    ],
     // "project": [
     //   "./tsconfig.json",
     //   "./tsconfig.node.json",

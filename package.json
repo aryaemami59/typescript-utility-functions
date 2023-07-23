@@ -22,13 +22,13 @@
   ],
   "scripts": {
     "lint": "eslint . --ext ts",
-    "typeCheck": "tsc -b",
+    "typeCheck": "npx tsc -b tsconfig.json",
     "format": "eslint . --fix --ext ts",
-    "clean": "tsc -b tsconfig.build.json --clean",
+    "clean": "rm -rf dist",
     "build": "rm -rf dist && tsc -b tsconfig.build.json",
     "prepublish": "npm run build",
     "test": "jest",
-    "start": "ts-node index.ts"
+    "start": "npm run typeCheck & npm run clean"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",

@@ -26,7 +26,7 @@
     "useDefineForClassFields": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitOverride": true,
-    "noEmitOnError": false,
+    "noEmitOnError": true,
     "useUnknownInCatchVariables": true,
     "listEmittedFiles": true,
     "plugins": [{ "name": "typescript-eslint-language-service" }]
@@ -38,12 +38,12 @@
   "references": [
     { "path": "./src/browser/tsconfig.browser.json" },
     { "path": "./src/node/tsconfig.node.json" },
-    // { "path": "./src/test/tsconfig.test.json" }
+    { "path": "./src/test/tsconfig.test.json" }
   ],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
     "transpileOnly": true
   },
-  "exclude": ["./dist", "src/test"]
+  "exclude": ["./dist"]
 }
