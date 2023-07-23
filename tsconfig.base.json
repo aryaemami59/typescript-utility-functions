@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // "declaration": true,
+    "declaration": true,
     "esModuleInterop": true,
     "extendedDiagnostics": true,
     "forceConsistentCasingInFileNames": true,
@@ -12,11 +12,11 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noUncheckedIndexedAccess": true,
-    // "outDir": "dist",
+    "outDir": "dist",
     "resolveJsonModule": true,
     "rootDir": "./",
     "skipLibCheck": true,
-    // "sourceMap": true,
+    "sourceMap": true,
     "strict": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true,
@@ -25,8 +25,12 @@
     "useDefineForClassFields": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitOverride": true,
-    // "noEmitOnError": true,
+    "noEmitOnError": false,
     "useUnknownInCatchVariables": true
+  },
+  "buildOptions": {
+    "verbose": true,
+    "dry": true
   },
   "ts-node": {
     "esm": true,

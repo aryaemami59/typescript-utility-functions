@@ -3,31 +3,6 @@
   "compilerOptions": {
     "lib": ["DOM", "ESNext"],
     "composite": true,
-    "noEmit": false,
-    // "rootDir": "./",
-    // "outDir": "./src/browser/dist"
-    // "declaration": true,
-    // "esModuleInterop": true,
-    // "extendedDiagnostics": true,
-    // "forceConsistentCasingInFileNames": true,
-    // "isolatedModules": true,
-    // "module": "ESNext",
-    // "moduleResolution": "Node",
-    // "noErrorTruncation": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noImplicitAny": true,
-    // "noUncheckedIndexedAccess": true,
-    // "resolveJsonModule": true,
-    // "skipLibCheck": true,
-    // "sourceMap": true,
-    // "strict": true,
-    // "strictFunctionTypes": true,
-    // "strictNullChecks": true,
-    // "strictPropertyInitialization": true,
-    // "target": "ESNext",
-    // "useDefineForClassFields": true,
-    // "noPropertyAccessFromIndexSignature": true,
-    // "noImplicitOverride": true,
-    // "useUnknownInCatchVariables": true
+    "noEmit": false
   }
 }
