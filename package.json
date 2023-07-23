@@ -8,6 +8,9 @@
   "module": "dist/index.js",
   "author": "Arya Emami <aryaemami59@yahoo.com> (https://github.com/aryaemami59)",
   "private": false,
+  "overrides": {
+    "tsconfig-paths": "^4.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/aryaemami59/typescript-utility-functions"

@@ -2,9 +2,9 @@
   "env": {
     "node": true,
     "jest": true,
-    "es2024": true,
-    "browser": true,
-    "shared-node-browser": true
+    "es2024": true
+    // "browser": true,
+    // "shared-node-browser": true
   },
   "extends": [
     "eslint:recommended",
@@ -24,13 +24,13 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    // "project": ["./tsconfig.json"],
+    "project": ["./tsconfig.json"],
     // "project": true,
-    "project": [
-      "./tsconfig.json",
-      "./src/browser/tsconfig.browser.json",
-      "./src/node/tsconfig.node.json"
-    ],
+    // "project": [
+    //   "./tsconfig.json",
+    //   "./src/browser/tsconfig.browser.json",
+    //   "./src/node/tsconfig.node.json"
+    // ],
     // "project": [
     //   "./tsconfig.json",
     //   "./tsconfig.node.json",

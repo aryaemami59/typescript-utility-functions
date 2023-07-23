@@ -28,8 +28,8 @@
     "noImplicitOverride": true,
     "noEmitOnError": false,
     "useUnknownInCatchVariables": true,
-    "listEmittedFiles": true,
-    "plugins": [{ "name": "typescript-eslint-language-service" }]
+    "listEmittedFiles": true
+    // "plugins": [{ "name": "typescript-eslint-language-service" }]
   },
   "buildOptions": {
     "verbose": true,
