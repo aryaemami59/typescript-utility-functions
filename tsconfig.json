@@ -6,7 +6,7 @@
     "extendedDiagnostics": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
     "module": "ESNext",
     "moduleResolution": "Node",
     "noErrorTruncation": true,
@@ -28,8 +28,8 @@
     "noImplicitOverride": true,
     "noEmitOnError": false,
     "useUnknownInCatchVariables": true,
-    "listEmittedFiles": true
-    // "plugins": [{ "name": "typescript-eslint-language-service" }]
+    "listEmittedFiles": true,
+    "plugins": [{ "name": "typescript-eslint-language-service" }]
   },
   "buildOptions": {
     "verbose": true,
@@ -37,12 +37,13 @@
   },
   "references": [
     { "path": "./src/browser/tsconfig.browser.json" },
-    { "path": "./src/node/tsconfig.node.json" }
+    { "path": "./src/node/tsconfig.node.json" },
+    // { "path": "./src/test/tsconfig.test.json" }
   ],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
     "transpileOnly": true
   },
-  "exclude": ["./dist"]
+  "exclude": ["./dist", "src/test"]
 }

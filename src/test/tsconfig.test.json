@@ -3,6 +3,10 @@
   "compilerOptions": {
     "types": ["jest"],
     "composite": true,
-    "noEmit": true
-  }
+    "noEmit": false
+  },
+  "references": [
+    { "path": "../node/tsconfig.node.json" },
+    { "path": "../browser/tsconfig.browser.json" }
+  ]
 }

@@ -5,10 +5,10 @@
  * @see {@link Uppercase}
  */
 const toUpperCase = <const S extends string>(str: S): Uppercase<S> => {
-  return str.toUpperCase();
+  return str.toUpperCase() as Uppercase<S>;
 };
 
-const element = window.addEventListener("click", () => {});
+// const element = window.addEventListener("click", () => {});
 
 // desc
 

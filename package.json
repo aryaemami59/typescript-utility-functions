@@ -25,7 +25,7 @@
     "typeCheck": "tsc -b",
     "format": "eslint . --fix --ext ts",
     "clean": "tsc -b tsconfig.build.json --clean",
-    "build": "rm -rf && tsc -b tsconfig.build.json",
+    "build": "rm -rf dist && tsc -b tsconfig.build.json",
     "prepublish": "npm run build",
     "test": "jest",
     "start": "ts-node index.ts"
