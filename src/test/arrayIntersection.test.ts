@@ -1,4 +1,4 @@
-import arrayIntersection from "../arrayIntersection";
+import arrayIntersection from "../node/arrayIntersection";
 
 describe("array intersection", () => {
   const firstArray = [1, 2, 3];

@@ -1,4 +1,5 @@
 {
-  "extends": "./tsconfig.json",
-  "exclude": ["src/test", "jest.config.ts", "dist"]
+  "exclude": ["src/test", "jest.config.ts", "dist"],
+  "compilerOptions": { "noEmit": false, "lib": ["ESNext", "DOM"] },
+  "extends": ["./tsconfig.json"]
 }

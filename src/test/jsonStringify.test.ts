@@ -1,4 +1,4 @@
-import jsonStringify from "../jsonStringify";
+import jsonStringify from "../node/jsonStringify";
 
 describe("json stringify", () => {
   it("pass", () => {

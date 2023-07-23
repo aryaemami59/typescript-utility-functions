@@ -1,12 +1,12 @@
 {
+  "extends": ["./tsconfig.base.json"],
   "compilerOptions": {
     "declaration": true,
-    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "experimentalDecorators": true,
     "extendedDiagnostics": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
+    "noEmit": false,
     "module": "ESNext",
     "moduleResolution": "Node",
     "noErrorTruncation": true,
@@ -24,11 +24,26 @@
     "strictPropertyInitialization": true,
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "useUnknownInCatchVariables": true
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitOverride": true,
+    "noEmitOnError": true,
+    "disableSourceOfProjectReferenceRedirect": false,
+    "useUnknownInCatchVariables": true,
+    "listEmittedFiles": true,
+    "plugins": [{ "name": "typescript-eslint-language-service" }]
   },
+  "buildOptions": {
+    "verbose": true,
+    "dry": true
+  },
+  "references": [
+    { "path": "./src/browser/tsconfig.browser.json" },
+    { "path": "./src/node/tsconfig.node.json" }
+  ],
   "ts-node": {
     "esm": true,
     "experimentalSpecifierResolution": "node",
     "transpileOnly": true
-  }
+  },
+  "exclude": ["./dist"]
 }

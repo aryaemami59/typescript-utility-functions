@@ -1,4 +1,4 @@
-import pick from "../pick";
+import pick from "../node/pick";
 
 describe("pick function", () => {
   const testObj = { firstName: "Arya", lastName: "Emami", age: 28 };

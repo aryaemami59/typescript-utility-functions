@@ -1,13 +1,13 @@
-import lowerCase from "../lowerCase";
+import toUpperCase from "../node/toUpperCase";
 
 describe("lowercase string", () => {
   it("pass", () => {
     expect.hasAssertions();
-    expect(lowerCase("ARYA")).toBe("arya");
+    expect(toUpperCase("arya")).toBe<"ARYA">("ARYA");
   });
 
   it("fail", () => {
     expect.hasAssertions();
-    expect(lowerCase("ARYA")).not.toBe("Arya");
+    expect(toUpperCase("arya")).not.toBe<"Arya">("Arya");
   });
 });

@@ -1,5 +1,11 @@
 {
-  "env": { "node": true, "jest": true, "es2024": true },
+  "env": {
+    "node": true,
+    "jest": true,
+    "es2024": true,
+    "browser": true,
+    "shared-node-browser": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
@@ -18,9 +24,22 @@
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    "project": true,
+    // "project": ["./tsconfig.json"],
+    // "project": true,
+    "project": [
+      "./tsconfig.json",
+      "./src/browser/tsconfig.browser.json",
+      "./src/node/tsconfig.node.json"
+    ],
+    // "project": [
+    //   "./tsconfig.json",
+    //   "./tsconfig.node.json",
+    //   "./src/browser/tsconfig.browser.json"
+    // ],
+    // "project": ["./tsconfig.json", "./src/browser/tsconfig.browser.json"],
     "sourceType": "module",
-    "tsconfigRootDir": "./"
+    "tsconfigRootDir": "./",
+    "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
   "plugins": [
     "@typescript-eslint",
@@ -106,6 +125,7 @@
     // "jest/no-standalone-expect": [0]
     // "jest/prefer-expect-assertions": []
   },
+  // "import/no-cycle": [0],
   "settings": {
     "jest": {
       "version": "detect"

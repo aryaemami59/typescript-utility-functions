@@ -1,22 +1,19 @@
 // Utilities
-import fetchWrapper from "./src/fetchWrapper";
-import jsonStringify from "./src/jsonStringify";
-import nodeFetchWrapper from "./src/nodeFetchWrapper";
-
+import fetchWrapper from "./src/browser/fetchWrapper";
 // Arrays
-import arrayDifference from "./src/arrayDifference";
-import arrayIntersection from "./src/arrayIntersection";
-import arraySymmetricDifference from "./src/arraySymmetricDifference";
-
-// Objects
-import objectEntries from "./src/objectEntries";
-import objectKeys from "./src/objectKeys";
-import pick from "./src/pick";
+import arrayDifference from "./src/node/arrayDifference";
+import arrayIntersection from "./src/node/arrayIntersection";
+import arraySymmetricDifference from "./src/node/arraySymmetricDifference";
+import jsonStringify from "./src/node/jsonStringify";
+import nodeFetchWrapper from "./src/node/nodeFetchWrapper";
+import objectEntries from "./src/node/objectEntries";
+import objectKeys from "./src/node/objectKeys";
+import pick from "./src/node/pick";
 
 // Strings
-import capitalize from "./src/capitalize";
-import lowerCase from "./src/lowerCase";
-import upperCase from "./src/upperCase";
+import capitalize from "./src/node/capitalize";
+import toLowerCase from "./src/node/toLowerCase";
+import toUpperCase from "./src/node/toUpperCase";
 
 export {
   arrayDifference,
@@ -25,10 +22,10 @@ export {
   capitalize,
   fetchWrapper,
   jsonStringify,
-  lowerCase,
   nodeFetchWrapper,
   objectEntries,
   objectKeys,
   pick,
-  upperCase,
+  toLowerCase,
+  toUpperCase,
 };

@@ -4,8 +4,8 @@
  * @see {@link String.toLowerCase}
  * @see {@link Lowercase}
  */
-const lowerCase = <const S extends string>(str: S): Lowercase<S> => {
+const toLowerCase = <const S extends string>(str: S): Lowercase<S> => {
   return str.toLowerCase() as Lowercase<S>;
 };
 
-export default lowerCase;
+export default toLowerCase;

@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import type {
   BetterRequestInit,
   ObjectOrArray,

@@ -1,4 +1,4 @@
-import arrayDifference from "../arrayDifference";
+import arrayDifference from "../node/arrayDifference";
 
 describe("array difference", () => {
   const firstArray = [1, 2, 3];

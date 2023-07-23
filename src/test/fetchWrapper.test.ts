@@ -1,4 +1,4 @@
-import fetchWrapper from "../fetchWrapper";
+import fetchWrapper from "../browser/fetchWrapper";
 
 describe("fetch wrapper", () => {
   it("pass", async () => {
@@ -10,7 +10,7 @@ describe("fetch wrapper", () => {
   it("fail", async () => {
     expect.hasAssertions();
     await expect(fetchWrapper("https://randomuser.me/ap")).rejects.toThrow(
-      "rejected"
+      "response failed"
     );
   });
 });

@@ -1,0 +1,10 @@
+{
+  // "extends": ["./tsconfig.json"],
+  "compilerOptions": {
+    "rootDir": "./src/test",
+    "types": ["jest", "node"],
+    // "composite": true,
+    // "noEmit": true
+  },
+  // "exclude": ["./src/browser", "./src/node"]
+}

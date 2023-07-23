@@ -4,8 +4,12 @@
  * @see {@link String.toUpperCase}
  * @see {@link Uppercase}
  */
-const upperCase = <const S extends string>(str: S): Uppercase<S> => {
-  return str.toUpperCase() as Uppercase<S>;
+const toUpperCase = <const S extends string>(str: S): Uppercase<S> => {
+  return str.toUpperCase();
 };
 
-export default upperCase;
+const element = window.addEventListener("click", () => {});
+
+// desc
+
+export default toUpperCase;

@@ -1,4 +1,4 @@
-import capitalize from "../capitalize";
+import capitalize from "../node/capitalize";
 
 describe("capitalize string", () => {
   it("pass", () => {

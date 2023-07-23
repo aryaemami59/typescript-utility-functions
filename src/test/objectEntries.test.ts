@@ -1,4 +1,4 @@
-import objectEntries from "../objectEntries";
+import objectEntries from "../node/objectEntries";
 
 describe("object entries", () => {
   it("pass", () => {

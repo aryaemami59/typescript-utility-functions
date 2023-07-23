@@ -1,4 +1,4 @@
-import arraySymmetricDifference from "../arraySymmetricDifference";
+import arraySymmetricDifference from "../node/arraySymmetricDifference";
 
 describe("array difference", () => {
   const firstArray = [1, 2, 3];

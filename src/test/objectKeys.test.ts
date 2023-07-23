@@ -1,4 +1,4 @@
-import objectKeys from "../objectKeys";
+import objectKeys from "../node/objectKeys";
 
 describe("lowercase string", () => {
   it("pass", () => {
