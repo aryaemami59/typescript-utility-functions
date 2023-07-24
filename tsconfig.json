@@ -1,5 +1,5 @@
 {
-  "extends": ["./tsconfig.base.json"],
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "declaration": true,
     "esModuleInterop": true,
@@ -40,10 +40,10 @@
     { "path": "./src/node/tsconfig.node.json" },
     { "path": "./src/test/tsconfig.test.json" }
   ],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node",
-    "transpileOnly": true
-  },
+  // "ts-node": {
+  //   "esm": true,
+  //   "experimentalSpecifierResolution": "node",
+  //   "transpileOnly": true
+  // },
   "exclude": ["./dist"]
 }

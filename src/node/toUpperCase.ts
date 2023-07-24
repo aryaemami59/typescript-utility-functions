@@ -8,8 +8,4 @@ const toUpperCase = <const S extends string>(str: S): Uppercase<S> => {
   return str.toUpperCase();
 };
 
-// describe
-
-// const element = window.addEventListener("click", () => {});
-
 export default toUpperCase;

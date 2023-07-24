@@ -10,8 +10,4 @@ const join = <
   return array.join(separator) as Join<T, D>;
 };
 
-// describe
-
-// window
-
 export default join;

@@ -4,8 +4,8 @@
  * @returns An object where the keys are elements inside the array and the values are the amount of times they appear inside the array.
  */
 const countDuplicates = <const T extends PropertyKey>(
-  array: T[]
-): Record<T, number> => {
+  array: readonly T[]
+): Readonly<Record<T, number>> => {
   const counts = {} as Record<T, number>;
   array.forEach(e => {
     counts[e] = (counts[e] || 0) + 1;

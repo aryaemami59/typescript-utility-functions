@@ -20,26 +20,14 @@
     "plugin:prettier/recommended"
   ],
   "ignorePatterns": ["node_modules", ".vscode", "dist"],
-  "overrides": [],
+  // "overrides": [{"parserOptions": {}}],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
-    // "project": ["./tsconfig.json"],
-    // "project": true,
-    "project": [
-      // "./tsconfig.base.json",
-      "./tsconfig.json"
-      // "./src/browser/tsconfig.browser.json",
-      // "./src/node/tsconfig.node.json"
-    ],
-    // "project": [
-    //   "./tsconfig.json",
-    //   "./tsconfig.node.json",
-    //   "./src/browser/tsconfig.browser.json"
-    // ],
-    // "project": ["./tsconfig.json", "./src/browser/tsconfig.browser.json"],
+    "project": true,
     "sourceType": "module",
     "tsconfigRootDir": "./",
+    // "extraFileExtensions": [".json"],
     "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
   "plugins": [
