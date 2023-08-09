@@ -1,33 +1,24 @@
 {
-  "env": {
-    "node": true,
-    "jest": true,
-    "es2024": true
-    // "browser": true,
-    // "shared-node-browser": true
-  },
+  "env": { "node": true, "jest": true, "es2024": true },
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "airbnb-base",
     "airbnb-typescript/base",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:jest/recommended",
     "plugin:jest/style",
     "plugin:jest/all",
     "plugin:prettier/recommended"
   ],
   "ignorePatterns": ["node_modules", ".vscode", "dist"],
-  // "overrides": [{"parserOptions": {}}],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": true,
     "sourceType": "module",
     "tsconfigRootDir": "./",
-    // "extraFileExtensions": [".json"],
     "EXPERIMENTAL_useSourceOfProjectReferenceRedirect": true
   },
   "plugins": [
@@ -103,21 +94,18 @@
           // Relative imports.
           // Anything that starts with a dot.
           ["^\\."],
-          ["^\\./src/array.*"],
-          ["^\\./src/object.*", "^\\./src/pick$"],
-          ["^\\./src/.*Case$|capitalize$"]
+          ["^\\.src/browser/.*$"],
+          ["^\\.src/node/.*$"],
+          ["^\\./src/.*/array.*", "^\\./src/.*/countDuplicates$"],
+          ["^\\./src/.*/object.*", "^\\./src/.*/pick$"],
+          [
+            "^\\./src/.*/.*Case$|capitalize$",
+            "^\\./src/.*/split$",
+            "^\\./src/.*/join$"
+          ]
         ]
       }
     ]
-    // "jest/prefer-expect-assertions": [2]
-    // "jest/no-hooks": [2, { "allow": ["beforeEach"] }]
-    // "jest/no-standalone-expect": [0]
-    // "jest/prefer-expect-assertions": []
   },
-  // "import/no-cycle": [0],
-  "settings": {
-    "jest": {
-      "version": "detect"
-    }
-  }
+  "settings": { "jest": { "version": "detect" } }
 }
