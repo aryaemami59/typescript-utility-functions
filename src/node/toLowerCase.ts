@@ -5,7 +5,7 @@
  * @see {@link Lowercase}
  */
 const toLowerCase = <const S extends string>(str: S): Lowercase<S> => {
-  return str.toLowerCase();
+  return str.toLowerCase() as Lowercase<S>;
 };
 
 export default toLowerCase;

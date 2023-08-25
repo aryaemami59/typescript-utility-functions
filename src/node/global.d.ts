@@ -12,10 +12,10 @@ declare global {
     ): Join<U, D>;
   }
 
-  interface String {
-    toUpperCase<const S extends string>(): Uppercase<S>;
-    toLowerCase<const S extends string>(): Lowercase<S>;
-  }
+  // interface String {
+  //   toUpperCase<const S extends string>(): Uppercase<S>;
+  //   toLowerCase<const S extends string>(): Lowercase<S>;
+  // }
 
   interface ObjectConstructor {
     entries<const TObj extends AnyObject>(o: TObj): ObjectEntries<TObj>;

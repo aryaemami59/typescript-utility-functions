@@ -33,10 +33,5 @@
     "verbose": true,
     "dry": true
   },
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node",
-    "transpileOnly": true
-  },
   "exclude": ["./dist", "./node_modules"]
 }
