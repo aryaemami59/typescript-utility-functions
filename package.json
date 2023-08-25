@@ -19,10 +19,10 @@
   ],
   "scripts": {
     "lint": "eslint . --ext ts",
-    "type-check": "npx tsc -b tsconfig.json",
+    "type-check": "tsc -b tsconfig.json",
     "format": "eslint . --fix --ext ts",
     "clean": "rm -rf dist",
-    "build": "rm -rf dist && tsc -b tsconfig.build.json",
+    "build": "npm run clean && tsc -b tsconfig.build.json",
     "prepublish": "npm run build",
     "test": "jest",
     "start": "npm run type-check & npm run clean"

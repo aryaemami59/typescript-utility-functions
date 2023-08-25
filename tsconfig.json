@@ -1,49 +1,43 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "declaration": true,
-    "esModuleInterop": true,
-    "extendedDiagnostics": true,
-    "forceConsistentCasingInFileNames": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "noErrorTruncation": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noUncheckedIndexedAccess": true,
-    "outDir": "dist",
-    "resolveJsonModule": true,
-    "rootDir": "./",
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strictPropertyInitialization": true,
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitOverride": true,
-    "noEmitOnError": true,
-    "useUnknownInCatchVariables": true,
+    // "declaration": true,
+    // "esModuleInterop": true,
+    // "extendedDiagnostics": true,
+    // "forceConsistentCasingInFileNames": true,
+    // "isolatedModules": true,
+    // "noEmit": true,
+    // "module": "ESNext",
+    // "moduleResolution": "Node",
+    // "noErrorTruncation": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noImplicitAny": true,
+    // "noUncheckedIndexedAccess": true,
+    // "outDir": "dist",
+    // "resolveJsonModule": true,
+    // "rootDir": "./",
+    // "skipLibCheck": true,
+    // "sourceMap": true,
+    // "strict": true,
+    // "strictFunctionTypes": true,
+    // "strictNullChecks": true,
+    // "strictPropertyInitialization": true,
+    // "target": "ESNext",
+    // "useDefineForClassFields": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // "noImplicitOverride": true,
+    // "noEmitOnError": true,
+    // "useUnknownInCatchVariables": true,
     "listEmittedFiles": true,
-    "plugins": [{ "name": "typescript-eslint-language-service" }]
+    "plugins": [
+      { "name": "typescript-eslint-language-service", "watchDirs": ["./dist"] }
+    ]
   },
-  "buildOptions": {
-    "verbose": true,
-    "dry": true
-  },
+  "buildOptions": { "verbose": true, "dry": true },
   "references": [
     { "path": "./src/browser/tsconfig.browser.json" },
     { "path": "./src/node/tsconfig.node.json" },
     { "path": "./src/test/tsconfig.test.json" }
-  ],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node",
-    "transpileOnly": true
-  },
-  "exclude": ["./dist"]
+  ]
+  // "exclude": ["./dist"]
 }

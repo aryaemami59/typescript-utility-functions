@@ -3,7 +3,7 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "composite": true,
-    "types": ["node"],
+    // "types": ["node"],
     "noEmit": false
   }
 }
